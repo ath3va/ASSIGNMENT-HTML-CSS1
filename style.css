@@ -1,0 +1,409 @@
+/* Basic settings for the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b1220;
+    color: #edf4ff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #121e32;
+    padding: 18px 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #48c6ef;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #48c6ef;
+}
+
+/* Home section */
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 70px 8%;
+    min-height: 500px;
+}
+
+.home-text {
+    width: 55%;
+}
+
+.home-text p {
+    margin-bottom: 15px;
+    color: #c3d3e7;
+}
+
+.home-text h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.home-text h1 span {
+    color: #48c6ef;
+}
+
+.home-text h2 {
+    font-size: 22px;
+    color: #c3d3e7;
+    margin-bottom: 15px;
+}
+
+.home-photo {
+    width: 280px;
+}
+
+.home-photo img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px solid #48c6ef;
+    border-radius: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1689b8;
+    color: white;
+    padding: 11px 22px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #48c6ef;
+    color: #0b1220;
+}
+
+/* Common section settings */
+.section {
+    padding: 65px 8%;
+}
+
+.heading {
+    text-align: center;
+    color: #48c6ef;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.light-section {
+    background-color: #121e32;
+}
+
+.small-text {
+    text-align: center;
+    color: #afbdd0;
+    margin-bottom: 30px;
+}
+
+/* About section */
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h3,
+.education-box h3 {
+    color: #48c6ef;
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    color: #c3d3e7;
+    margin-bottom: 12px;
+}
+
+.education-box {
+    width: 35%;
+    background-color: #1e293b;
+    padding: 25px;
+    border-left: 4px solid #48c6ef;
+    border-radius: 8px;
+}
+
+/* Skills and project cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    width: 30%;
+    min-width: 200px;
+    background-color: #1e293b;
+    padding: 22px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+.skill-card h3 {
+    color: #48c6ef;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    color: #c3d3e7;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    border-color: #48c6ef;
+    transform: translateY(-4px);
+}
+
+/* Project section */
+.project-card {
+    width: 45%;
+    min-width: 260px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-picture {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.calculator-picture {
+    background-color: #145078;
+}
+
+.jarvis-picture {
+    background-color: #24245b;
+}
+
+.project-picture h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.project-picture p {
+    color: #d8f5ff;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    color: #48c6ef;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #c3d3e7;
+}
+
+/* Contact section */
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.contact-details,
+.contact-form {
+    width: 48%;
+}
+
+.contact-details h3 {
+    color: #48c6ef;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+}
+
+.contact-details a {
+    color: #48c6ef;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e293b;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #48c6ef;
+}
+
+/* Footer */
+footer {
+    background-color: #080e19;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    color: #48c6ef;
+}
+
+footer p {
+    color: #afbdd0;
+    margin-top: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 18px 0;
+}
+
+.social-links a {
+    color: #48c6ef;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Make the website fit on small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .home-photo {
+        width: 230px;
+    }
+
+    .home-photo img {
+        height: 290px;
+    }
+
+    .about-box {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .education-box {
+        width: 100%;
+    }
+
+    .skill-card {
+        width: 45%;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-details,
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-text h1 {
+        font-size: 30px;
+    }
+
+    .home-text h2 {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+}

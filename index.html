@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Surve - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Atharva.</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <section id="home" class="home">
+        <div class="home-text">
+            <p>Hello! Welcome to my website.</p>
+            <h1>Hi, I'm <span>Atharva Surve</span></h1>
+            <h2>First Year Computer Science Student</h2>
+            <p>
+                I am learning coding and web development. I like trying new
+                things, learning about technology and making small projects.
+            </p>
+            <a href="#contact" class="button">Contact Me</a>
+        </div>
+        <div class="home-photo">
+            <img src="assets/atharva-photo.png" alt="Atharva Surve">
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">
+        <h2 class="heading">About Me</h2>
+        <div class="about-box">
+            <div class="about-text">
+                <h3>A little about me</h3>
+                <p>
+                    My name is Atharva Surve. I am a first-year Computer Science
+                    student at NIAT. I am still learning the basics of coding
+                    and practising every day.
+                </p>
+                <p>
+                    I know some Python, HTML and CSS. I am also interested in
+                    Artificial Intelligence and how it can help people.
+                </p>
+                <p>
+                    My goal is to become a good software developer. I want to
+                    improve my skills and make useful projects in the future.
+                </p>
+            </div>
+            <div class="education-box">
+                <h3>My Education</h3>
+                <p>Course: Computer Science</p>
+                <p>College: NIAT</p>
+                <p>Year: First Year</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="section light-section">
+        <h2 class="heading">My Skills</h2>
+        <p class="small-text">These are the skills I am learning and improving.</p>
+        <div class="card-container">
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>I use Python to learn programming and basic logic.</p>
+            </div>
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>I use HTML to create the structure of web pages.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>I use CSS to add colours and styles to websites.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Generative AI</h3>
+                <p>I am learning how AI tools work and how to use them.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Problem Solving</h3>
+                <p>I try to solve problems one step at a time.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Communication</h3>
+                <p>I am practising how to explain my ideas clearly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section">
+        <h2 class="heading">My Projects</h2>
+        <p class="small-text">Here are two projects from my learning journey.</p>
+        <div class="card-container">
+            <div class="project-card">
+                <div class="project-picture calculator-picture">
+                    <h2>123 + 456</h2>
+                    <p>PYTHON CALCULATOR</p>
+                </div>
+                <div class="project-info">
+                    <h3>Python Calculator</h3>
+                    <p>
+                        I made a simple calculator using Python. It takes numbers
+                        from the user and can add, subtract, multiply and divide.
+                        This project helped me practise input and basic maths.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-picture jarvis-picture">
+                    <h2>J.A.R.V.I.S</h2>
+                    <p>MY AI ASSISTANT IDEA</p>
+                </div>
+                <div class="project-info">
+                    <h3>JARVIS AI Assistant</h3>
+                    <p>
+                        JARVIS is an AI assistant idea I am exploring. I want it
+                        to answer questions and understand voice commands. I am
+                        learning how AI can make an assistant more helpful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section light-section">
+        <h2 class="heading">Contact Me</h2>
+        <p class="small-text">You can contact me using the details below.</p>
+        <div class="contact-box">
+            <div class="contact-details">
+                <h3>Let's talk!</h3>
+                <p>Name: Atharva Surve</p>
+                <p>Email: <a href="mailto:ath3va.16@gmail.com">ath3va.16@gmail.com</a></p>
+                <p>Location: India</p>
+            </div>
+
+            <form class="contact-form" action="mailto:ath3va.16@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Atharva Surve</h2>
+        <p>Thank you for visiting my portfolio!</p>
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="mailto:ath3va.16@gmail.com">Email</a>
+        </div>
+        <p>Copyright &copy; 2026 Atharva Surve. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
